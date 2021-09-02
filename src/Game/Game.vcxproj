@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{314dbb21-8bd5-4085-a8b1-340035b48328}</ProjectGuid>
+    <RootNamespace>Game</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>D:\000-Temp\Game\Game\SDLbin\x86;D:\000-Temp\Game\Game\glew\lib;D:\000-Temp\Game\Game\assimpbin\lib32;$(LibraryPath)</LibraryPath>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <LibraryPath>D:\000-Temp\Game\Game\SDLbin\x86;D:\000-Temp\Game\Game\glew\lib;D:\000-Temp\Game\Game\assimpbin\lib32;$(LibraryPath)</LibraryPath>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>D:\000-Temp\Game\Game\assimpbin\lib64;D:\000-Temp\Game\Game\glew-2.1.0\lib\Release\x64;D:\000-Temp\Game\Game\SDLbin\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <LibraryPath>D:\000-Temp\Game\Game\assimpbin\lib64;D:\000-Temp\Game\Game\glew-2.1.0\lib\Release\x64;D:\000-Temp\Game\Game\SDLbin\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\000-Temp\Game\Game;D:\000-Temp\Game\Game\SDL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>NotSet</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL_image.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /y "$(ProjectDir)assimpbin\bin32\assimp.exe" "$(OutDir)"
+xcopy /y "$(ProjectDir)assimpbin\bin32\assimp.dll" "$(OutDir)"
+xcopy /y "$(ProjectDir)SDLbin\x86\SDL.dll" "$(OutDir)"
+xcopy /y "$(ProjectDir)SDLbin\x86\SDL_image.dll" "$(OutDir)"
+xcopy /y "$(ProjectDir)glew\bin\glew32.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\000-Temp\Game\Game;D:\000-Temp\Game\Game\SDL;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>NotSet</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL_image.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /y "$(ProjectDir)assimpbin\bin32\assimp.exe" "$(OutDir)"
+xcopy /y "$(ProjectDir)assimpbin\bin32\assimp.dll" "$(OutDir)"
+xcopy /y "$(ProjectDir)SDLbin\x86\SDL.dll" "$(OutDir)"
+xcopy /y "$(ProjectDir)SDLbin\x86\SDL_image.dll" "$(OutDir)"
+xcopy /y "$(ProjectDir)glew\bin\glew32.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\000-Temp\Game\Game\SDL;D:\000-Temp\Game\Game;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL_image.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /y "$(ProjectDir)assimpbin\bin64\assimp.exe" "$(OutDir)"
+xcopy /y "$(ProjectDir)assimpbin\bin64\assimp.dll" "$(OutDir)"
+xcopy /y "$(ProjectDir)SDLbin\x64\SDL.dll" "$(OutDir)"
+xcopy /y "$(ProjectDir)SDLbin\x64\SDL_image.dll" "$(OutDir)"
+xcopy /y "$(ProjectDir)SDLbin\x64\libjpeg-8.dll" "$(OutDir)"
+xcopy /y "$(ProjectDir)SDLbin\x64\libpng15-15.dll" "$(OutDir)"
+xcopy /y "$(ProjectDir)glew-2.1.0\bin\Release\x64\glew32.dll" "$(OutDir)"
+xcopy /y "$(ProjectDir)shaders" "$(OutDir)shaders\" /s /e
+xcopy /y "$(ProjectDir)textures" "$(OutDir)textures\" /s /e
+xcopy /y "$(ProjectDir)models" "$(OutDir)models\" /s /e
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\000-Temp\Game\Game\SDL;D:\000-Temp\Game\Game;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL_image.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /y "$(ProjectDir)assimpbin\bin64\assimp.exe" "$(OutDir)"
+xcopy /y "$(ProjectDir)assimpbin\bin64\assimp.dll" "$(OutDir)"
+xcopy /y "$(ProjectDir)SDLbin\x64\SDL.dll" "$(OutDir)"
+xcopy /y "$(ProjectDir)SDLbin\x64\SDL_image.dll" "$(OutDir)"
+xcopy /y "$(ProjectDir)SDLbin\x64\libjpeg-8.dll" "$(OutDir)"
+xcopy /y "$(ProjectDir)SDLbin\x64\libpng15-15.dll" "$(OutDir)"
+xcopy /y "$(ProjectDir)glew-2.1.0\bin\Release\x64\glew32.dll" "$(OutDir)"
+xcopy /y "$(ProjectDir)shaders" "$(OutDir)shaders\" /s /e
+xcopy /y "$(ProjectDir)textures" "$(OutDir)textures\" /s /e
+xcopy /y "$(ProjectDir)models" "$(OutDir)models\" /s /e
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="aquarium.cpp" />
+    <ClCompile Include="bounding_box.cpp" />
+    <ClCompile Include="bubble.cpp" />
+    <ClCompile Include="collision.cpp" />
+    <ClCompile Include="drag_and_drop.cpp" />
+    <ClCompile Include="game_models.cpp" />
+    <ClCompile Include="GLee.c" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mesh.cpp" />
+    <ClCompile Include="model.cpp" />
+    <ClCompile Include="model_shader.cpp" />
+    <ClCompile Include="pgr.cpp" />
+    <ClCompile Include="skybox.cpp" />
+    <ClCompile Include="water.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitignore" />
+    <None Include="Makefile" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="aquarium.h" />
+    <ClInclude Include="aquarium_data.h" />
+    <ClInclude Include="bounding_box.h" />
+    <ClInclude Include="bubble.h" />
+    <ClInclude Include="collision.h" />
+    <ClInclude Include="drag_and_drop.h" />
+    <ClInclude Include="game_models.h" />
+    <ClInclude Include="header_template.h" />
+    <ClInclude Include="mesh.h" />
+    <ClInclude Include="model.h" />
+    <ClInclude Include="model_shader.h" />
+    <ClInclude Include="pgr.h" />
+    <ClInclude Include="skybox.h" />
+    <ClInclude Include="sphere.h" />
+    <ClInclude Include="water.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

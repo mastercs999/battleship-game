@@ -1,0 +1,24 @@
+# Blender MTL File: 'None'
+# Material Count: 2
+
+newmtl Boulder_01
+Ns 19.607843
+Ka 0.000000 0.000000 0.000000
+Kd 0.470400 0.470400 0.470400
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Bump Boulders_Normal.png
+map_Kd Boulders_Diffuse.png
+
+newmtl Boulder_02
+Ns 19.607843
+Ka 0.000000 0.000000 0.000000
+Kd 0.470400 0.470400 0.470400
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Bump Boulders_Normal.png
+map_Kd Boulders_Diffuse.png
