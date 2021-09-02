@@ -1,5 +1,5 @@
 # battleship-game
-Battleship game written as a school project in OpenGL.
+Battleship game written as a university project in OpenGL.
 
 ## About the game
 The idea for this game comes from a paper game [Battleship](https://en.wikipedia.org/wiki/Battleship_(game)). This game was written as a university project, thus the functionality is limited. Original game is for two people. This is a single player.
