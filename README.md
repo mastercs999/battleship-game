@@ -21,7 +21,7 @@ Start `Game.exe`. You will see an aquarium with a few ships. You can redeploy th
 ![scenery](img/water.png)
 ![scenery](img/torpedo.png)
 
-## My Contribution
+## My contribution
 The Battleship game was written by me and two other students. My part was graphics and effects. Mainly: 
 * Water waves
 * Water reflection
