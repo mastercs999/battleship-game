@@ -21,6 +21,9 @@ Start `Game.exe`. You will see an aquarium with a few ships. You can redeploy th
 ![scenery](img/water.png)
 ![scenery](img/torpedo.png)
 
+# Troubleshooting
+* You might need to install [Visual C++ Redistributable for Visual Studio 2012 Update 4](https://www.microsoft.com/en-us/download/details.aspx?id=30679) in case of error "`The program can't start because MSVCP100.dll is missing from your computer`".
+
 ## My contribution
 The Battleship game was written by me and two other students. My part was graphics and effects. Mainly: 
 * Water waves
