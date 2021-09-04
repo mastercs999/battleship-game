@@ -82,11 +82,11 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <LibraryPath>D:\GitHub\battleship-game\src\Game\assimpbin\lib64;$(ProjectDir)glew-2.1.0\lib\Release\x64;$(ProjectDir)SDLbin\x64;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(ProjectDir)assimpbin\lib64;$(ProjectDir)glew-2.1.0\lib\Release\x64;$(ProjectDir)SDLbin\x64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <LibraryPath>D:\GitHub\battleship-game\src\Game\assimpbin\lib64;$(ProjectDir)glew-2.1.0\lib\Release\x64;$(ProjectDir)SDLbin\x64;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(ProjectDir)assimpbin\lib64;$(ProjectDir)glew-2.1.0\lib\Release\x64;$(ProjectDir)SDLbin\x64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
